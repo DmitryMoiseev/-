@@ -31,7 +31,7 @@ for(let i = 0; i < img.length; i++){          //при наведении
         /*сравнение результатов и определение победителя */
         if($('.result li').first().find('p').text() == $('.result li').last().find('p').text()){ 
              $('.total').last().find('p').text('ничья'); 
-           
+           /*проверка на выигрышь */
             } else if ($('.result li').first().find('p').text() == 'бумага' && $('.result li').last().first().find('p').text() == 'камень' || $('.result li').first().find('p').text() == 'камень' && $('.result li').last().find('p').text() == 'ножницы' || $('.result li').first().find('p').text() == 'ножницы' && $('.result li').last().find('p').text() == 'бумага'){
             
             $('.total').last().find('p').text('вы выиграли C:'); 
